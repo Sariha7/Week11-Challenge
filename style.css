@@ -227,6 +227,7 @@
     top: 10px;
     font-size: 16px;
     color: white;
+    margin-left: 11px;
 }
 
 .hero-sub-caption {
@@ -276,6 +277,12 @@
 }
 .hidden-mobile{
 	display: none;
+}
+
+hr {
+	width: 170px;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 .header-left {
 	display: flex;
@@ -369,7 +376,7 @@
     padding-top: 5%;
 }
 
-@media ( min-width: 760px) and (max-width: 1000px) {
+@media ( min-width: 760px) and (max-width: 1400px) {
 	
 	.banner-list{
 		display: block;
@@ -377,23 +384,95 @@
 	}
 	.banner-left{
 		float: left;
+		padding: 18px 0px 15px 30px;
 	}
 	.banner-right{
 		float: right;
+	    margin-top: 24px;
+	    font-size: 20px;
+	    padding-right: 3%;
+	    letter-spacing: 1px;
+	}
 
+	.banner-icon{
+		width: 40px;
+		height: 40px;
+	}
+
+	.banner-phone{
+		margin-right: 45px;
+	}
+
+	.banner-list li{
+		font-size: 16px;
+	}
+
+	.bundle{
+		padding: 20% 15% 10% 10%;
+	}
+	.card-button{
+		padding: 10px 40px;
+   		width: 75%;
+	}
+	.chev-icon-tablet{
+		color: #DA262D;
 	}
 	.header {
 		display: block;
 	}
+
+	.header-menu {
+		float: left;
+	    padding-left: 3%;
+	    padding-top: 1.5%;
+	    word-spacing: 17px;
+	}
+
+	.header-primary-right> *{
+		float: right;
+		list-style: none;
+		flex-direction: row;
+	    display: flex;
+	    padding-right: 3%;
+	    padding-top: 1.5%;
+	    font-size: 14px;
+	}
+	.header-primary-icon {
+		height: 15px;
+		width: 15px;
+		color: #DA262D;
+		margin-right: 5px;
+		margin-left: 15px;
+	}
+	/*.header-left> *{
+		display: inline-block;
+	}*/
+	.header-left-nav li{
+		display: inline-block;;
+	}
 	.hidden-mobile{
 		display: inline;
+	}
+	.input{
+		width: 100%;
+	    height: 42px;
+	    box-sizing: border-box;
+	    padding-right: 80px;
+	    border-radius: 100px;
+	    border: 1px solid gray;
+	    padding-left: 1rem;
 	}
 	.provider-info{
 		width: 33.3%;
 		float:left;
 		list-style: none;
 	}
-
+	.header-menu> *{
+		display: inline-block;
+	}
+	.header-secondary{
+		border-bottom: solid thin #58595B;
+	}
 	.card{
 		width: 33.3%;
 		float:left;
@@ -405,13 +484,16 @@
 		padding-top: 1.5%;
 	}
 	.main-footer{
-	padding: 4% 9%;	
-    font-size: 20px;
+		padding: 4% 9%;	
+	    font-size: 20px;
 	}
 	.footer {
 		clear: both;
 	}
 	.hidden-tablet{
+		display: none;
+	}
+	.fa-bars{
 		display: none;
 	}
 	.main-footer-button {
@@ -435,9 +517,27 @@
         clear: both;
 	}
 	.hero-message{
-		width: 50%;
+		width: 60%;
 	    float: right;
 	    background-color: rgba(255,255,255, 0.5);
+
 	}
+	.hero-message h1{
+		text-align: left;
+	}
+
+	.hero-message p{
+		text-align: left;
+	}
+	.hero-sub-caption{
+		padding-bottom: 5%;
+	}
+	.pricing-search{
+		padding-top: 5%;
+	}
+	.order-now-button{
+		margin-left: 0px;
+	}
+
 }
 
